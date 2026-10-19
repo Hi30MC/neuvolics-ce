@@ -15,7 +15,7 @@ public static class Atoms
             matteTextures = new()
             {
                 diffuse = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/frixon_diffuse"),
-                shade = Assets.textures.atoms.salt_shade
+                shade = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/frixon_shade")
             }
         };
         gelaron = new()
@@ -25,7 +25,7 @@ public static class Atoms
             matteTextures = new()
             {
                 diffuse = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/gelaron_diffuse"),
-                shade = Assets.textures.atoms.salt_shade
+                shade = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/gelaron_shade")
             }
         };
         zephiron = new()
@@ -35,7 +35,7 @@ public static class Atoms
             matteTextures = new()
             {
                 diffuse = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/zephiron_diffuse"),
-                shade = Assets.textures.atoms.salt_shade
+                shade = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/zephiron_shade")
             }
         };
         hestium = new()
