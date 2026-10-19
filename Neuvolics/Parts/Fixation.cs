@@ -152,7 +152,7 @@ internal static class FixationGlyph {
 
         // irises
         API.DrawIris(renderer, partDataWrapper, FixationZephironIrisHex, time, Textures.Irises.Zephiron, pss.isProcessing ? API.ConvertToMaybe(pss.processingAtoms[0]) : MaybeHelper.empty);
-        API.DrawIris(renderer, partDataWrapper, FixationNeumetalIrisHex, time, Textures.Irises.Zephiron, pss.isProcessing ? API.ConvertToMaybe(pss.processingAtoms[1]) : MaybeHelper.empty);
+        API.DrawIris(renderer, partDataWrapper, FixationNeumetalIrisHex, time, Textures.Irises.Neumetal, pss.isProcessing ? API.ConvertToMaybe(pss.processingAtoms[1]) : MaybeHelper.empty);
 
 
         renderer.RenderBase(Textures.Fixation.Connectors, offset, pivot, 0);
