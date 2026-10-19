@@ -104,7 +104,7 @@ internal static class SeparationGlyph {
             pss.isProcessing = true;
             pss.processingAtoms = new AtomType[2] { Atoms.gelaron, Atoms.frixon };
 
-            // Brimstone.API.PlaySound(sim, SeparationSound);
+            Sounds.glyph_separation.PlaySound(sim.solutionEditor.method_506());
             return true;
         }
         else if (pss.isProcessing)

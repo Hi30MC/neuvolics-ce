@@ -104,7 +104,7 @@ internal static class PutrefactionGlyph {
         }
 
         bowlAtom.molecule.ReplaceAtom(API.GetNeumetalAtom(neumetalIndex), bowlAtom.pos);
-        // Brimstone.API.PlaySound(sim, PutrefactionSound);
+        Sounds.glyph_putrefaction.PlaySound(sim.solutionEditor.method_506());
         bowlAtom.atom.transmutationEffect = new TransmutationEffect(sim.solutionEditor, (TransmutationEffectRenderMode) 1, bowlAtom.atomType, Assets.textures.atoms.projection_effect, 30f);
 
         return true;

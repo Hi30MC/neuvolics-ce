@@ -80,12 +80,12 @@ internal static class CataclysmGlyph {
             if (cataclysmState.ZephironCount < 6)
             {
                 cataclysmState.ZephironCount++;
-                // Brimstone.API.PlaySound(sim, CataclysmConsumeSound);
+                Sounds.glyph_cataclysm_consume.PlaySound(sim.solutionEditor.method_506());
             }
             else
             {
                 // todo: flash
-                // Brimstone.API.PlaySound(sim, CataclysmDiscardSound);
+                Sounds.glyph_cataclysm_discard.PlaySound(sim.solutionEditor.method_506());
             }
         tryTransmute:
             bool bowl1Maro = false;
@@ -150,7 +150,11 @@ internal static class CataclysmGlyph {
 
             bowlVolic.atom.transmutationEffect = new TransmutationEffect(sim.solutionEditor, (TransmutationEffectRenderMode) 1, bowlVolic.atomType, Assets.textures.atoms.projection_effect, 30f);
             bowlZephiron.atom.transmutationEffect = new TransmutationEffect(sim.solutionEditor, (TransmutationEffectRenderMode) 1, bowlZephiron.atomType, Assets.textures.atoms.projection_effect, 30f);
-            // Brimstone.API.PlaySound(sim, transfusingFrixon ? CataclysmTransfuseFrix : CataclysmTransfuseGel);
+            if (transfusingFrixon) {
+                Sounds.glyph_cataclysm_transfuse_frixon.PlaySound(sim.solutionEditor.method_506());
+            } else {
+                Sounds.glyph_cataclysm_transfuse_gelaron.PlaySound(sim.solutionEditor.method_506());
+            }
         tryEject:
             if (cataclysmState.ZephironCount == 0 || sim.FindAtomRelative(part, CataclysmIrisHex).HasValue())
             {
@@ -159,7 +163,7 @@ internal static class CataclysmGlyph {
             }
             cataclysmState.ZephironCount--;
             sim.SpawnColliderRelative(part, CataclysmIrisHex);
-            // Brimstone.API.PlaySound(sim, CataclysmEjectSound);
+            Sounds.glyph_cataclysm_eject.PlaySound(sim.solutionEditor.method_506());
             pss.isProcessing = true;
             pss.processingAtoms = new AtomType[] { Atoms.zephiron };
         setState:

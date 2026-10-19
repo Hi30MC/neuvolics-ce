@@ -116,6 +116,7 @@ internal static class ConsolidationGlyph {
             pss.processingAtoms = new AtomType[1] { Atoms.zephiron };
 
             // Brimstone.API.PlaySound(sim, ConsolidationSound);
+            Sounds.glyph_consolidation.PlaySound(sim.solutionEditor.method_506());
             return true;
         }
         else if (pss.isProcessing)

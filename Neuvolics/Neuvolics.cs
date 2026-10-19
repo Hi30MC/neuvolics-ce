@@ -18,6 +18,7 @@ public class Neuvolics : QuintessentialMod {
         Wheels.AddWheelTypes();
         Parts.AddPartTypes();
         Parts.EnableTriplex();
+        Sounds.AddSounds();
 
     }
     public override void LoadCompatContent() { }

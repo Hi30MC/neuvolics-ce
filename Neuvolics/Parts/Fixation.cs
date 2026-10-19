@@ -238,7 +238,7 @@ internal static class FixationGlyph {
             pss.isProcessing = true;
             pss.processingAtoms = new AtomType[2] { Atoms.zephiron, API.GetNeumetalAtom(neumetalIndex + delta) };
 
-            // Brimstone.API.PlaySound(sim, FixationSound);
+            Sounds.glyph_fixation.PlaySound(sim.solutionEditor.method_506());
             return true;
         }
         else if (pss.isProcessing)
