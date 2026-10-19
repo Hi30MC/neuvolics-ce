@@ -1,7 +1,7 @@
 {
   "neuvolics" : {
     "" : "Neuvolics",
-    "description" :  "",
+    "description" :  "Introduces Charlie's Neuvolics elements.",
     "atoms" : {
       "azulum" : {
         "" : "Azulum",
@@ -39,23 +39,23 @@
     "parts" : {
       "cataclysm" : {
         "" : "Glyph of Cataclysm",
-        "descriptiion" : "",
+        "descriptiion" : "The glyph of cataclysm holds 3 atoms of zephiron initially, with space for 6 internally. In addition, the glyph transfuses an atom of zephiron into a volic via the bowls, transmuting the volic into zephiron, and the zephiron into the opposing volic.",
       },
       "consolidation" : {
         "" : "Glyph of Consolidation",
-        "descriptiion" : "",
+        "descriptiion" : "The glyph of consolidation consumes an atom of frixon and gelaron to combine them into zephiron.",
       },
       "fixation" : {
         "" : "Glyph of Fixation",
-        "descriptiion" : "",
+        "descriptiion" : "The glyph of fixation consumes a pair of the same volics to transmute a neumetal to an adjacent form.",
       },
       "putrefaction" : {
         "" : "Glyph of Putrefaction",
-        "descriptiion" : "",
+        "descriptiion" : "The glyph of putrefaction consumes one or two atoms of frixon or gelaron to transmute a neumetal to an adjacent form.",
       },
       "separation" : {
         "" : "Glyph of Separation",
-        "descriptiion" : "",
+        "descriptiion" : "The glyph of separation divides an atom of zephiron in an atom of frixon and gelaron.",
       },
     },
     "permission_sections" : "Neuvolics",
