@@ -7,7 +7,12 @@ public class Neuvolics : QuintessentialMod {
     public static Neuvolics Instance { get; }
 
     public override void Load() { }
-    public override void LoadContent() { }
+
+    public override void LoadContent()
+    {
+        Atoms.LoadAtoms();
+        Wheels.AddWheelTypes();
+    }
     public override void LoadCompatContent() { }
     public override void FinaliseContent() { }
 
