@@ -42,6 +42,7 @@ public static class Atoms
         {
             symbol = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/hestium_symbol"),
             shadow = Assets.textures.atoms.shadow,
+            isMetallic = true,
             metallicTextures = new()
             {
                 diffuse = Assets.textures.atoms.copper_diffuse,
@@ -53,6 +54,7 @@ public static class Atoms
         {
             symbol = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/azulum_symbol"),
             shadow = Assets.textures.atoms.shadow,
+            isMetallic = true,
             metallicTextures = new()
             {
                 diffuse = Assets.textures.atoms.copper_diffuse,
@@ -64,6 +66,7 @@ public static class Atoms
         {
             symbol = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/taceum_symbol"),
             shadow = Assets.textures.atoms.shadow,
+            isMetallic = true,
             metallicTextures = new()
             {
                 diffuse = Assets.textures.atoms.copper_diffuse,
@@ -75,6 +78,7 @@ public static class Atoms
         {
             symbol = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/mitrum_symbol"),
             shadow = Assets.textures.atoms.shadow,
+            isMetallic = true,
             metallicTextures = new()
             {
                 diffuse = Assets.textures.atoms.copper_diffuse,
@@ -86,6 +90,7 @@ public static class Atoms
         {
             symbol = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/iridium_symbol"),
             shadow = Assets.textures.atoms.shadow,
+            isMetallic = true,
             metallicTextures = new()
             {
                 diffuse = Assets.textures.atoms.copper_diffuse,
