@@ -57,6 +57,10 @@
         "" : "Glyph of Separation",
         "descriptiion" : "The glyph of separation divides an atom of zephiron in an atom of frixon and gelaron.",
       },
+      "maros_wheel" : {
+        "" : "Maro's Wheel",
+        "description" : "By using Maro's wheel with the glyph of cataclysm, the volics may be freely interchanged."
+      }
     },
     "permission_sections" : "Neuvolics",
     "permissions" : {
@@ -65,6 +69,7 @@
       "fixation" : "Glyph of Fixation",
       "putrefaction" : "Glyph of Putrefaction",
       "separation" : "Glyph of Separation",
+      "maros_wheel" : "Maro's Wheel",
     },
   }
 }

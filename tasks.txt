@@ -8,8 +8,8 @@ Tasks:
 * devMerge --onlyOnChange -id "neuvolics" --mergeXML
 * merge --onlyOnChange --asNamed
 * export -name "Neuvolics" -outputPath "/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/.builds"
-* run -args "-devEnv -pseudoLang" --attachDebugger --readlogs
+* run -args "-devEnv -pseudoLang" --attachDebugger --readLogs
 AutoExit:
-    true
+  true
 # CopyTasksPath:
-# /home/zephyr/Docuyments/code/opus/mod_dev/mods/neuvolics-ce
+# /home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/

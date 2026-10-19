@@ -6,7 +6,7 @@
   "authors" : ["Hi30MC (et al.)", "Greenfield", "Charlie and Her Daemons", "Giacinto"],
   "icon" : "nv_icon",
   "mappings" : "",
-  "Dependencies" : {
+  "dependencies" : {
     "quintessential_core": "[0.8.1,)",
     "quintessential_data": "[0.8.1,)",
     "lithos" : "[0.0.2,)"

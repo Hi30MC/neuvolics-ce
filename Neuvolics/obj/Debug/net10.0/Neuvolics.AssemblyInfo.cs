@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Neuvolics")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fac84a841992876a392b08f84c6916ab155a000")]
 [assembly: System.Reflection.AssemblyProductAttribute("Neuvolics")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Neuvolics")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
