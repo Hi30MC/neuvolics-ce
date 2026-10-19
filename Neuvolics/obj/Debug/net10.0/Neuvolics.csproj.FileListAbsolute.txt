@@ -1,0 +1,16 @@
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/obj/Debug/net10.0/Neuvolics.csproj.AssemblyReference.cache
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/obj/Debug/net10.0/Neuvolics.GeneratedMSBuildEditorConfig.editorconfig
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/obj/Debug/net10.0/Neuvolics.AssemblyInfoInputs.cache
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/obj/Debug/net10.0/Neuvolics.AssemblyInfo.cs
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/obj/Debug/net10.0/Neuvolics.csproj.CoreCompileInputs.cache
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/bin/Debug/net10.0/Neuvolics.deps.json
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/bin/Debug/net10.0/Neuvolics.dll
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/bin/Debug/net10.0/Neuvolics.pdb
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/bin/Debug/net10.0/Mono.Cecil.dll
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/bin/Debug/net10.0/MonoMod.Patcher.dll
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/bin/Debug/net10.0/MonoMod.Utils.dll
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/obj/Debug/net10.0/Neuvolics.csproj.Up2Date
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/obj/Debug/net10.0/Neuvolics.dll
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/obj/Debug/net10.0/refint/Neuvolics.dll
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/obj/Debug/net10.0/Neuvolics.pdb
+/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/obj/Debug/net10.0/ref/Neuvolics.dll

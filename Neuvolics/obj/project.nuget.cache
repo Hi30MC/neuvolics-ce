@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zhc+XdPdFNo=",
+  "success": true,
+  "projectFilePath": "/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/Neuvolics.csproj",
+  "expectedPackageFiles": [
+    "/home/zephyr/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.13/microsoft.aspnetcore.app.ref.10.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

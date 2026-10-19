@@ -1,0 +1,15 @@
+Tasks:
+* strings --onlyOnChange
+* intermediary --onlyOnChange
+* newMod -name "Neuvolics"
+* copy -toMod "Neuvolics" -from "/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/modMeta.jsonc"
+* copy -toMod "Neuvolics" -from "/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Neuvolics/bin/Debug/net10.0/Neuvolics.dll"
+* copy -toMod "Neuvolics" -from "/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/Content"
+* devMerge --onlyOnChange -id "neuvolics" --mergeXML
+* merge --onlyOnChange --asNamed
+* export -name "Neuvolics" -outputPath "/home/zephyr/Documents/code/opus/mod_dev/mods/neuvolics-ce/.builds"
+* run -args "-devEnv -pseudoLang" --attachDebugger --readlogs
+AutoExit:
+    true
+# CopyTasksPath:
+# /home/zephyr/Docuyments/code/opus/mod_dev/mods/neuvolics-ce

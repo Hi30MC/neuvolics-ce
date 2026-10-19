@@ -1,0 +1,70 @@
+{
+  "neuvolics" : {
+    "" : "Neuvolics",
+    "description" :  "",
+    "atoms" : {
+      "azulum" : {
+        "" : "Azulum",
+        "elemental" : "Elemental Azulum",
+      },
+      "frixon" : {
+        "" : "Frixon",
+        "elemental" : "Elemental Frixon",
+      },
+      "gelaron" : {
+        "" : "Gelaron",
+        "elemental" : "Elemental Gelaron",
+      },
+      "hestium" : {
+        "" : "Hestium",
+        "elemental" : "Elemental Hestium",
+      },
+      "iridium" : {
+        "" : "Iridium",
+        "elemental" : "Elemental Iridium",
+      },
+      "mitrum" : {
+        "" : "Mitrum",
+        "elemental" : "Elemental Mitrum",
+      },
+      "taceum" : {
+        "" : "Taceum",
+        "elemental" : "Elemental Taceum",
+      },
+      "zephiron" : {
+        "" : "Zephiron",
+        "elemental" : "Elemental Zephiron",
+      },
+    },
+    "parts" : {
+      "cataclysm" : {
+        "" : "Glyph of Cataclysm",
+        "descriptiion" : "",
+      },
+      "consolidation" : {
+        "" : "Glyph of Consolidation",
+        "descriptiion" : "",
+      },
+      "fixation" : {
+        "" : "Glyph of Fixation",
+        "descriptiion" : "",
+      },
+      "putrefaction" : {
+        "" : "Glyph of Putrefaction",
+        "descriptiion" : "",
+      },
+      "separation" : {
+        "" : "Glyph of Separation",
+        "descriptiion" : "",
+      },
+    },
+    "permission_sections" : "Neuvolics",
+    "permissions" : {
+      "cataclysm" : "Glyph of Cataclysm",
+      "consolidation" : "Glyph of Consolidation",
+      "fixation" : "Glyph of Fixation",
+      "putrefaction" : "Glyph of Putrefaction",
+      "separation" : "Glyph of Separation",
+    },
+  }
+}
