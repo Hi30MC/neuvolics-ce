@@ -128,4 +128,20 @@ internal static class Parts
         Neuvolics.Instance.AddRecipe(new(), Putrefaction.Id, Putrefaction.Id);
         Neuvolics.Instance.AddRecipe(new(), Separation.Id, Separation.Id);
     }
+
+    public static void EnableTriplex()
+    {
+        PartTypes.triplexBonder.bonders[0].uniqueAtoms.Add(Atoms.frixon);
+        PartTypes.triplexBonder.bonders[0].uniqueAtoms.Add(Atoms.gelaron);
+        PartTypes.triplexBonder.bonders[0].uniqueAtoms.Add(Atoms.azulum);
+        PartTypes.triplexBonder.bonders[0].uniqueAtoms.Add(Atoms.iridium);
+        PartTypes.triplexBonder.bonders[1].uniqueAtoms.Add(Atoms.frixon);
+        PartTypes.triplexBonder.bonders[1].uniqueAtoms.Add(Atoms.gelaron);
+        PartTypes.triplexBonder.bonders[1].uniqueAtoms.Add(Atoms.azulum);
+        PartTypes.triplexBonder.bonders[1].uniqueAtoms.Add(Atoms.iridium);
+        PartTypes.triplexBonder.bonders[2].uniqueAtoms.Add(Atoms.frixon);
+        PartTypes.triplexBonder.bonders[2].uniqueAtoms.Add(Atoms.gelaron);
+        PartTypes.triplexBonder.bonders[2].uniqueAtoms.Add(Atoms.azulum);
+        PartTypes.triplexBonder.bonders[2].uniqueAtoms.Add(Atoms.iridium);
+    }
 }

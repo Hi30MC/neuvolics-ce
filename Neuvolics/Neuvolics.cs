@@ -17,6 +17,7 @@ public class Neuvolics : QuintessentialMod {
         Atoms.LoadAtoms();
         Wheels.AddWheelTypes();
         Parts.AddPartTypes();
+        Parts.EnableTriplex();
 
     }
     public override void LoadCompatContent() { }

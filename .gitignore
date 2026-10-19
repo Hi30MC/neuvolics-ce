@@ -1,3 +1,5 @@
 Neuvolics/bin/*
 Neuvolics/obj/*
+Neuvolics/Neuvolics.csproj
 .builds
+tasks.txt
