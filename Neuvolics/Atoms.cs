@@ -15,7 +15,7 @@ public static class Atoms
             matteTextures = new()
             {
                 diffuse = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/frixon_diffuse"),
-                shade = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/frixon_symbol"),
+                shade = Assets.textures.atoms.salt_shade
             }
         };
         gelaron = new()
@@ -25,7 +25,7 @@ public static class Atoms
             matteTextures = new()
             {
                 diffuse = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/gelaron_diffuse"),
-                shade = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/gelaron_symbol"),
+                shade = Assets.textures.atoms.salt_shade
             }
         };
         zephiron = new()
@@ -35,14 +35,15 @@ public static class Atoms
             matteTextures = new()
             {
                 diffuse = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/zephiron_diffuse"),
-                shade = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/zephiron_symbol"),
+                shade = Assets.textures.atoms.salt_shade
             }
         };
         hestium = new()
         {
             symbol = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/hestium_symbol"),
             shadow = Assets.textures.atoms.shadow,
-            metallicTextures = {
+            metallicTextures = new()
+            {
                 diffuse = Assets.textures.atoms.copper_diffuse,
                 lightramp = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/hestium_lightramp"),
                 rimlight = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/hestium_rimlight"),
@@ -52,7 +53,8 @@ public static class Atoms
         {
             symbol = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/azulum_symbol"),
             shadow = Assets.textures.atoms.shadow,
-            metallicTextures = {
+            metallicTextures = new()
+            {
                 diffuse = Assets.textures.atoms.copper_diffuse,
                 lightramp = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/azulum_lightramp"),
                 rimlight = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/azulum_rimlight"),
@@ -62,7 +64,8 @@ public static class Atoms
         {
             symbol = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/taceum_symbol"),
             shadow = Assets.textures.atoms.shadow,
-            metallicTextures = {
+            metallicTextures = new()
+            {
                 diffuse = Assets.textures.atoms.copper_diffuse,
                 lightramp = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/taceum_lightramp"),
                 rimlight = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/taceum_rimlight"),
@@ -72,7 +75,8 @@ public static class Atoms
         {
             symbol = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/mitrum_symbol"),
             shadow = Assets.textures.atoms.shadow,
-            metallicTextures = {
+            metallicTextures = new()
+            {
                 diffuse = Assets.textures.atoms.copper_diffuse,
                 lightramp = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/mitrum_lightramp"),
                 rimlight = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/mitrum_rimlight"),
@@ -82,7 +86,8 @@ public static class Atoms
         {
             symbol = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/iridium_symbol"),
             shadow = Assets.textures.atoms.shadow,
-            metallicTextures = {
+            metallicTextures = new()
+            {
                 diffuse = Assets.textures.atoms.copper_diffuse,
                 lightramp = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/iridium_lightramp"),
                 rimlight = AssetLoaderHelper.LoadTexture("textures/atoms/erikhaag/Neuvolics/iridium_rimlight"),
