@@ -1,6 +1,4 @@
-using Quintessential;
-
-namespace Util;
+namespace NeuvolicsUtil;
 
 public static class Textures
 {

@@ -1,8 +1,4 @@
-using MonoMod;
 using Neuvolics;
-using Quintessential;
-using System.Linq;
-using System.Runtime.Intrinsics.X86;
 
 public class patch_SoundAssets : SoundAssets
 {

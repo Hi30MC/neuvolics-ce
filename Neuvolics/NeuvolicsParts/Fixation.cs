@@ -1,12 +1,11 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Neuvolics;
 using Quintessential;
-using Util;
+using NeuvolicsUtil;
 
-namespace Parts;
+namespace NeuvolicsParts;
 
 internal static class FixationGlyph {
 

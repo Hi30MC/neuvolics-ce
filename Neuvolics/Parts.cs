@@ -1,11 +1,7 @@
-using System.ComponentModel.Design.Serialization;
-using Parts;
+using NeuvolicsParts;
 using Quintessential;
-using Util;
+using NeuvolicsUtil;
 using static Quintessential.PartCycleDelegate;
-// using Quintessential;
-// using static Quintessential.PartCycleDelegate;
-
 namespace Neuvolics;
 
 internal static class Parts

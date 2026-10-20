@@ -1,4 +1,4 @@
-namespace Util;
+namespace NeuvolicsUtil;
 
 internal struct CataclysmState
 {

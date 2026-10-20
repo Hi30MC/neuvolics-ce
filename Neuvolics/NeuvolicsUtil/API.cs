@@ -1,7 +1,7 @@
 using MonoMod.ModInterop;
 using Neuvolics;
 
-namespace Util;
+namespace NeuvolicsUtil;
 
 public static class API
 {

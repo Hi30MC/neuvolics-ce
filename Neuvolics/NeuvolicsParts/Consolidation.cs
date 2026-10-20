@@ -1,9 +1,8 @@
-using System;
 using Neuvolics;
 using Quintessential;
-using Util;
+using NeuvolicsUtil;
 
-namespace Parts;
+namespace NeuvolicsParts;
 
 internal static class ConsolidationGlyph {
 

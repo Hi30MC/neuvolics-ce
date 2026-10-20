@@ -1,10 +1,9 @@
-using System;
 using MonoMod.Utils;
 using Neuvolics;
 using Quintessential;
-using Util;
+using NeuvolicsUtil;
 
-namespace Parts;
+namespace NeuvolicsParts;
 
 internal static class CataclysmGlyph {
 

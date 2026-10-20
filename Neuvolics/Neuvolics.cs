@@ -1,5 +1,5 @@
 using Quintessential;
-using Util;
+using NeuvolicsUtil;
 
 namespace Neuvolics;
 
