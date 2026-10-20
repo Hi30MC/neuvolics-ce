@@ -1,4 +1,5 @@
 using Quintessential;
+using Util;
 
 namespace Neuvolics;
 
@@ -20,6 +21,7 @@ public class Neuvolics : QuintessentialMod {
         Parts.EnableTriplex();
         Sounds.AddSounds();
 
+        ExportManager.ExportAll();
     }
     public override void LoadCompatContent() { }
     public override void FinaliseContent() { }
