@@ -9,6 +9,7 @@ internal static class PutrefactionGlyph {
     public static readonly HexIndex PutrefactionBowlHex = new(1, 0);
     public static readonly HexIndex PutrefactionHole1Hex = new(0, -1);
     public static readonly HexIndex PutrefactionHole2Hex = new(-1, 1);
+    public static readonly HexIndex PutrefactionWiresHex = new(0, 0);
 
     public static void Render(Part part, Vector2 pos, SolutionEditorBase editor, PartRenderer renderer)
     {
