@@ -73,6 +73,7 @@ internal static class Parts
                 PutrefactionGlyph.PutrefactionHole1Hex,
                 PutrefactionGlyph.PutrefactionHole2Hex,
                 PutrefactionGlyph.PutrefactionBowlHex,
+                PutrefactionGlyph.PutrefactionWiresHex,
             },
             permissionCategory = PuzzlePermissions.None,
             CustomPermissionCheck = perms => perms.Contains(Neuvolics.Instance.GetIdentifier("putrefaction"))
