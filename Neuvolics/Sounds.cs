@@ -15,15 +15,15 @@ namespace Neuvolics
             glyph_putrefaction = AssetLoaderHelper.LoadSound("sounds/putrefaction");
             glyph_separation = AssetLoaderHelper.LoadSound("sounds/separation");
 
-            Volume.SetVoulme(glyph_cataclysm_consume, 0.35f);
-            Volume.SetVoulme(glyph_cataclysm_discard, 0.35f);
-            Volume.SetVoulme(glyph_cataclysm_eject, 0.35f);
-            Volume.SetVoulme(glyph_cataclysm_transfuse_frixon, 0.35f);
-            Volume.SetVoulme(glyph_cataclysm_transfuse_gelaron, 0.35f);
-            Volume.SetVoulme(glyph_consolidation, 0.35f);
-            Volume.SetVoulme(glyph_fixation, 0.35f);
-            Volume.SetVoulme(glyph_putrefaction, 0.35f);
-            Volume.SetVoulme(glyph_separation, 0.35f);
+            Volume.SetVolume(glyph_cataclysm_consume, 0.35f);
+            Volume.SetVolume(glyph_cataclysm_discard, 0.35f);
+            Volume.SetVolume(glyph_cataclysm_eject, 0.35f);
+            Volume.SetVolume(glyph_cataclysm_transfuse_frixon, 0.35f);
+            Volume.SetVolume(glyph_cataclysm_transfuse_gelaron, 0.35f);
+            Volume.SetVolume(glyph_consolidation, 0.35f);
+            Volume.SetVolume(glyph_fixation, 0.35f);
+            Volume.SetVolume(glyph_putrefaction, 0.35f);
+            Volume.SetVolume(glyph_separation, 0.35f);
         }
     }
 }
