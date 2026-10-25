@@ -1,14 +1,14 @@
 {
   "mod_id": "neuvolics",
-  "version" : "1.2.2",
+  "version" : "1.2.3",
   "mod_page_url" : "https://github.com/Hi30MC/neuvolics-ce",
   "dll" : "Neuvolics.dll",
   "authors" : ["Hi30MC (et al.)", "Greenfield", "Charlie and Her Daemons", "Giacinto"],
   "icon" : "nv_icon",
   "mappings" : "",
   "dependencies" : {
-    "quintessential_core": "[0.8.1,)",
-    "quintessential_data": "[0.8.1,)",
+    "quintessential_core": "[0.9.0,)",
+    "quintessential_data": "[0.9.0,)",
     "lithos" : "[0.0.2,)"
   },
   "conflicts" : [],
