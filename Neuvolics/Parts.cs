@@ -101,7 +101,7 @@ internal static class Parts
         Neuvolics.Instance.AddPartType(Putrefaction, "putrefaction", PutrefactionGlyph.Render);
         Neuvolics.Instance.AddPartType(Separation, "separation", SeparationGlyph.Render);
 
-        QApi.AddPartTypeToPanel(Separation, PartTypes.triplexBonder);
+        QApi.AddPartTypeToPanel(Separation, PartTypes.equilibriumGlyph);
         QApi.AddPartTypeToPanel(Consolidation, Separation);
         QApi.AddPartTypeToPanel(Fixation, Consolidation);
         QApi.AddPartTypeToPanel(Putrefaction, Fixation);

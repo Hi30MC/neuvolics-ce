@@ -45,7 +45,7 @@ internal static class Wheels
             CustomPermissionCheck = perms => perms.Contains(Neuvolics.Instance.GetIdentifier("maros_wheel"))
         };
 
-        QApi.AddPartTypeToPanel(MarosWheel, false);
+        QApi.AddPartTypeToPanel(MarosWheel, PartTypes.ravarisWheel);
         Neuvolics.Instance.AddPartType(MarosWheel, "maros_wheel", (part, pos, editor, renderer) => { });
         Neuvolics.Instance.AddPuzzlePermission("maros_wheel");
     }
