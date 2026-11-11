@@ -1,5 +1,6 @@
 using Quintessential;
 using NeuvolicsUtil;
+using Quintessential.Logging;
 
 namespace Neuvolics;
 
@@ -9,12 +10,12 @@ public class Neuvolics : QuintessentialMod {
     public const string LogPrefix = "Neuvolics: ";
 
     public override void Load() {
-        Logger.Log(LogPrefix + "Loaded!");
+        Instance.Log.Log(LogLevel.Info, LogPrefix + "Loaded!");
     }
 
     public override void LoadContent()
     {
-        Logger.Log(LogPrefix + "Initializing...");
+        Instance.Log.Log(LogLevel.Info, LogPrefix + "Initializing...");
         Atoms.LoadAtoms();
         Wheels.AddWheelTypes();
         Parts.AddPartTypes();
