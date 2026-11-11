@@ -72,9 +72,9 @@ internal static class SeparationGlyph {
     {
         if (first)
         {
-            HexIndex h = part.InFrontBy(SeparationHoleHex);
-            HexIndex iF = part.InFrontBy(SeparationFrixonIrisHex);
-            HexIndex iP = part.InFrontBy(SeparationGelaronIrisHex);
+            HexIndex h = part.GlobalPosFromLocal(SeparationHoleHex);
+            HexIndex iF = part.GlobalPosFromLocal(SeparationFrixonIrisHex);
+            HexIndex iP = part.GlobalPosFromLocal(SeparationGelaronIrisHex);
 
             if (sim.FindAtom(iF).HasValue() || sim.FindAtom(iP).HasValue())
             {
@@ -103,7 +103,7 @@ internal static class SeparationGlyph {
             pss.isProcessing = true;
             pss.processingAtoms = new AtomType[2] { Atoms.gelaron, Atoms.frixon };
 
-            Sounds.glyph_separation.PlaySound(sim.solutionEditor.method_506());
+            Sounds.glyph_separation.PlaySound(sim.solutionEditor.GetVolumeMultiplier());
             return true;
         }
         else if (pss.isProcessing)

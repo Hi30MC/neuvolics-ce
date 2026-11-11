@@ -36,9 +36,9 @@ internal static class PutrefactionGlyph {
     }
     public static bool OnCycle(Sim sim, Part part, PartSimState pss, GlyphRecipe recipe, bool first)
     {
-        HexIndex bowl = part.InFrontBy(PutrefactionBowlHex);
-        HexIndex hole1 = part.InFrontBy(PutrefactionHole1Hex);
-        HexIndex hole2 = part.InFrontBy(PutrefactionHole2Hex);
+        HexIndex bowl = part.GlobalPosFromLocal(PutrefactionBowlHex);
+        HexIndex hole1 = part.GlobalPosFromLocal(PutrefactionHole1Hex);
+        HexIndex hole2 = part.GlobalPosFromLocal(PutrefactionHole2Hex);
         if (!sim.FindAtom(bowl).GetOrDefault(out AtomReference bowlAtom))
         {
             //bowl empty
@@ -104,7 +104,7 @@ internal static class PutrefactionGlyph {
         }
 
         bowlAtom.molecule.ReplaceAtom(API.GetNeumetalAtom(neumetalIndex), bowlAtom.pos);
-        Sounds.glyph_putrefaction.PlaySound(sim.solutionEditor.method_506());
+        Sounds.glyph_putrefaction.PlaySound(sim.solutionEditor.GetVolumeMultiplier());
         bowlAtom.atom.transmutationEffect = new TransmutationEffect(sim.solutionEditor, (TransmutationEffectRenderMode) 1, bowlAtom.atomType, Assets.textures.atoms.projection_effect, 30f);
 
         return true;

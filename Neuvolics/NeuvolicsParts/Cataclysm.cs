@@ -79,12 +79,12 @@ internal static class CataclysmGlyph {
             if (cataclysmState.ZephironCount < 6)
             {
                 cataclysmState.ZephironCount++;
-                Sounds.glyph_cataclysm_consume.PlaySound(sim.solutionEditor.method_506());
+                Sounds.glyph_cataclysm_consume.PlaySound(sim.solutionEditor.GetVolumeMultiplier());
             }
             else
             {
                 // todo: flash
-                Sounds.glyph_cataclysm_discard.PlaySound(sim.solutionEditor.method_506());
+                Sounds.glyph_cataclysm_discard.PlaySound(sim.solutionEditor.GetVolumeMultiplier());
             }
         tryTransmute:
             bool bowl1Maro = false;
@@ -150,9 +150,9 @@ internal static class CataclysmGlyph {
             bowlVolic.atom.transmutationEffect = new TransmutationEffect(sim.solutionEditor, (TransmutationEffectRenderMode) 1, bowlVolic.atomType, Assets.textures.atoms.projection_effect, 30f);
             bowlZephiron.atom.transmutationEffect = new TransmutationEffect(sim.solutionEditor, (TransmutationEffectRenderMode) 1, bowlZephiron.atomType, Assets.textures.atoms.projection_effect, 30f);
             if (transfusingFrixon) {
-                Sounds.glyph_cataclysm_transfuse_frixon.PlaySound(sim.solutionEditor.method_506());
+                Sounds.glyph_cataclysm_transfuse_frixon.PlaySound(sim.solutionEditor.GetVolumeMultiplier());
             } else {
-                Sounds.glyph_cataclysm_transfuse_gelaron.PlaySound(sim.solutionEditor.method_506());
+                Sounds.glyph_cataclysm_transfuse_gelaron.PlaySound(sim.solutionEditor.GetVolumeMultiplier());
             }
         tryEject:
             if (cataclysmState.ZephironCount == 0 || sim.FindAtomRelative(part, CataclysmIrisHex).HasValue())
@@ -162,7 +162,7 @@ internal static class CataclysmGlyph {
             }
             cataclysmState.ZephironCount--;
             sim.SpawnColliderRelative(part, CataclysmIrisHex);
-            Sounds.glyph_cataclysm_eject.PlaySound(sim.solutionEditor.method_506());
+            Sounds.glyph_cataclysm_eject.PlaySound(sim.solutionEditor.GetVolumeMultiplier());
             pss.isProcessing = true;
             pss.processingAtoms = new AtomType[] { Atoms.zephiron };
         setState:

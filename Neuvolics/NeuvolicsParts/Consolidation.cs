@@ -23,7 +23,7 @@ internal static class ConsolidationGlyph {
         {
             foreach (Molecule m in editor.GetSimulation().GetMolecules())
             {
-                if (m.GetAtoms().Count == 1 && m.GetAtoms().TryGetValue(part.InFrontBy(h), out Atom a))
+                if (m.GetAtoms().Count == 1 && m.GetAtoms().TryGetValue(part.GlobalPosFromLocal(h), out Atom a))
                 {
                     AtomType aT = a.atomType;
                     if (aT == Atoms.gelaron)
@@ -81,9 +81,9 @@ internal static class ConsolidationGlyph {
     {
         if (first)
         {
-            HexIndex h1 = part.InFrontBy(ConsolidationHole1Hex);
-            HexIndex h2 = part.InFrontBy(ConsolidationHole2Hex);
-            HexIndex ia = part.InFrontBy(ConsolidationZephironIrisHex);
+            HexIndex h1 = part.GlobalPosFromLocal(ConsolidationHole1Hex);
+            HexIndex h2 = part.GlobalPosFromLocal(ConsolidationHole2Hex);
+            HexIndex ia = part.GlobalPosFromLocal(ConsolidationZephironIrisHex);
 
             if (sim.FindAtom(ia).HasValue())
             {
@@ -115,7 +115,7 @@ internal static class ConsolidationGlyph {
             pss.processingAtoms = new AtomType[1] { Atoms.zephiron };
 
             // Brimstone.API.PlaySound(sim, ConsolidationSound);
-            Sounds.glyph_consolidation.PlaySound(sim.solutionEditor.method_506());
+            Sounds.glyph_consolidation.PlaySound(sim.solutionEditor.GetVolumeMultiplier());
             return true;
         }
         else if (pss.isProcessing)

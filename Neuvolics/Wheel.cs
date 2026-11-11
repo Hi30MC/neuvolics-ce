@@ -25,8 +25,8 @@ internal static class Wheels
     {
         MarosWheel = new()
         {
-            baseTexture = AssetLoaderHelper.LoadTexture("textures/parts/erikhaag/Neuvolics/icons/maro"), // Panel icon
-            hoverTexture = AssetLoaderHelper.LoadTexture("textures/parts/erikhaag/Neuvolics/icons/maro_hover"), // Hovered panel icon
+            iconTexture = AssetLoaderHelper.LoadTexture("textures/parts/erikhaag/Neuvolics/icons/maro"), // Panel icon
+            iconHoverTexture = AssetLoaderHelper.LoadTexture("textures/parts/erikhaag/Neuvolics/icons/maro_hover"), // Hovered panel icon
             cost = 25,
             isUnique = true,
             layer = PartTypeLayer.Top,
@@ -50,7 +50,7 @@ internal static class Wheels
         Neuvolics.Instance.AddPuzzlePermission("maros_wheel");
     }
 
-    public static Maybe<AtomReference> MaybeFindMaroWheelAtom(Sim sim_self, Part part, HexIndex offset) => MaybeFindMaroWheelAtom(sim_self, part.InFrontBy(offset));
+    public static Maybe<AtomReference> MaybeFindMaroWheelAtom(Sim sim_self, Part part, HexIndex offset) => MaybeFindMaroWheelAtom(sim_self, part.GlobalPosFromLocal(offset));
     public static Maybe<AtomReference> MaybeFindMaroWheelAtom(Sim sim_self, HexIndex hex)
     {
         var SEB = sim_self.solutionEditor;

@@ -65,7 +65,7 @@ internal static class FixationGlyph {
     NetRemoval:
         for (int i = 0; i < nettingHexes.Length; i++)
         {
-            if (OccupiedHexes.Contains(part.InFrontBy(nettingHexes[i])))
+            if (OccupiedHexes.Contains(part.GlobalPosFromLocal(nettingHexes[i])))
             {
                 // if hex contains a part, disable it
                 invertedNetMask |= 1 << i;
@@ -80,7 +80,7 @@ internal static class FixationGlyph {
         {
             foreach (Molecule m in editor.GetSimulation().GetMolecules())
             {
-                if (m.GetAtoms().Count == 1 && m.GetAtoms().TryGetValue(part.InFrontBy(h), out Atom a))
+                if (m.GetAtoms().Count == 1 && m.GetAtoms().TryGetValue(part.GlobalPosFromLocal(h), out Atom a))
                 {
                     AtomType aT = a.atomType;
                     if (aT == Atoms.frixon)
@@ -161,11 +161,11 @@ internal static class FixationGlyph {
     {
         if (first)
         {
-            HexIndex hLeft = part.InFrontBy(FixationHole1Hex);
-            HexIndex hCenter = part.InFrontBy(FixationHole2Hex);
-            HexIndex hRight = part.InFrontBy(FixationHole3Hex);
-            HexIndex iZ = part.InFrontBy(FixationZephironIrisHex);
-            HexIndex iN = part.InFrontBy(FixationNeumetalIrisHex);
+            HexIndex hLeft = part.GlobalPosFromLocal(FixationHole1Hex);
+            HexIndex hCenter = part.GlobalPosFromLocal(FixationHole2Hex);
+            HexIndex hRight = part.GlobalPosFromLocal(FixationHole3Hex);
+            HexIndex iZ = part.GlobalPosFromLocal(FixationZephironIrisHex);
+            HexIndex iN = part.GlobalPosFromLocal(FixationNeumetalIrisHex);
 
             if (sim.FindAtom(iZ).HasValue() || sim.FindAtom(iN).HasValue())
             {
@@ -237,7 +237,7 @@ internal static class FixationGlyph {
             pss.isProcessing = true;
             pss.processingAtoms = new AtomType[2] { Atoms.zephiron, API.GetNeumetalAtom(neumetalIndex + delta) };
 
-            Sounds.glyph_fixation.PlaySound(sim.solutionEditor.method_506());
+            Sounds.glyph_fixation.PlaySound(sim.solutionEditor.GetVolumeMultiplier());
             return true;
         }
         else if (pss.isProcessing)

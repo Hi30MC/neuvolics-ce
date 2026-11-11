@@ -16,8 +16,8 @@ internal static class Parts
             isFullHexCover = true,
             glowTexture = Assets.textures.select.disposal_glow, // TBD
             strokeTexture = Assets.textures.select.disposal_stroke, // TBD
-            baseTexture = Textures.Icon.Cataclysm,
-            hoverTexture = Textures.Icon.CataclysmHover,
+            iconTexture = Textures.Icon.Cataclysm,
+            iconHoverTexture = Textures.Icon.CataclysmHover,
             glyphHexes = new HexIndex[] {
                 CataclysmGlyph.CataclysmHoleHex,
                 CataclysmGlyph.CataclysmIrisHex,
@@ -33,8 +33,8 @@ internal static class Parts
             isFullHexCover = true,
             glowTexture = Textures.Select.BendGlow,
             strokeTexture = Textures.Select.BendStroke,
-            baseTexture = Textures.Icon.Consolidation,
-            hoverTexture = Textures.Icon.ConsolidationHover,
+            iconTexture = Textures.Icon.Consolidation,
+            iconHoverTexture = Textures.Icon.ConsolidationHover,
             glyphHexes = new HexIndex[] {
                 ConsolidationGlyph.ConsolidationHole1Hex,
                 ConsolidationGlyph.ConsolidationHole2Hex,
@@ -49,8 +49,8 @@ internal static class Parts
             isFullHexCover = true,
             glowTexture = Textures.Select.ParallelogramGlow,
             strokeTexture = Textures.Select.ParallelogramStroke,
-            baseTexture = Textures.Icon.Fixation,
-            hoverTexture = Textures.Icon.FixationHover,
+            iconTexture = Textures.Icon.Fixation,
+            iconHoverTexture = Textures.Icon.FixationHover,
             glyphHexes = new HexIndex[] {
                 FixationGlyph.FixationHole1Hex,
                 FixationGlyph.FixationHole2Hex,
@@ -67,8 +67,8 @@ internal static class Parts
             isFullHexCover = true,
             glowTexture = Assets.textures.select.tetra_glow,
             strokeTexture = Assets.textures.select.tetra_stroke,
-            baseTexture = Textures.Icon.Putrefaction,
-            hoverTexture = Textures.Icon.PutrefactionHover,
+            iconTexture = Textures.Icon.Putrefaction,
+            iconHoverTexture = Textures.Icon.PutrefactionHover,
             glyphHexes = new HexIndex[] {
                 PutrefactionGlyph.PutrefactionHole1Hex,
                 PutrefactionGlyph.PutrefactionHole2Hex,
@@ -84,8 +84,8 @@ internal static class Parts
             isFullHexCover = true,
             glowTexture = Textures.Select.TrilineGlow,
             strokeTexture = Textures.Select.TrilineStroke,
-            baseTexture = Textures.Icon.Separation,
-            hoverTexture = Textures.Icon.SeparationHover,
+            iconTexture = Textures.Icon.Separation,
+            iconHoverTexture = Textures.Icon.SeparationHover,
             glyphHexes = new HexIndex[] {
                 SeparationGlyph.SeparationFrixonIrisHex,
                 SeparationGlyph.SeparationGelaronIrisHex,
